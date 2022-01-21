@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='icon' href='./logo.ico'>
+    <link rel="stylesheet" href="style.css">
+    <title>Project Parrot</title>
+</head>
+
+<script src='./pixel.js'></script>
+
+<body>
+    <div class='header'>
+        <img src='./logo.ico' alt='icon' class='header-icon' onclick='pixelImage.showData()' />
+        <div class='header-buttons'>
+            <input type='file' id='input-file' aria-label="import-file">
+            <input id='color-picker' type='color' value='#000000' aria-label="pick-color" />
+            <button onclick='pixelImage.toggleGridLine()' class='header-button'>Toggle Grid</button>
+            <button onclick='pixelImage.import()' class='header-button'>Import</button>
+            <button onclick='pixelImage.importLayer()' class='header-button'>Import Layer</button>
+            <button onclick='pixelImage.export()' class='header-button'>Export</button>
+        </div>
+    </div>
+    <div id='canvas-wrapper'>
+        <canvas id='canvas'></canvas>
+        <div id='canvas-gridline'></div>
+        <div id='canvas-layer'></div>
+    </div>
+</body>
+
+<script>
+    const pixelImage = new PixelImage()
+</script>
+
+
+</html>
