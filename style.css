@@ -48,14 +48,15 @@
     display: flex;
     flex-wrap: wrap;
     pointer-events: none;
-    visibility: visible;
 }
 
 #canvas-gridline {
+    visibility: hidden;
     z-index: 99;
 }
 
 #canvas-layer {
+    visibility: visible;
     z-index: 9;
 }
 
