@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='icon' href='./logo.ico'>
+    <link rel='icon' href='logo.ico' type='image/x-icon' />
     <link rel="stylesheet" href="style.css">
     <title>Project Parrot</title>
 </head>
@@ -18,9 +18,11 @@
             <input type='file' id='input-file' aria-label="import-file">
             <input id='color-picker' type='color' value='#000000' aria-label="pick-color" />
             <button onclick='pixelImage.toggleGridLine()' class='header-button'>Toggle Grid</button>
-            <button onclick='pixelImage.import()' class='header-button'>Import</button>
+            <button onclick='pixelImage.importData()' class='header-button'>Import Data</button>
             <button onclick='pixelImage.importLayer()' class='header-button'>Import Layer</button>
-            <button onclick='pixelImage.export()' class='header-button'>Export</button>
+            <button onclick='pixelImage.importImage()' class='header-button'>Import Image</button>
+            <button onclick='pixelImage.exportData()' class='header-button'>Export Data</button>
+            <button onclick='pixelImage.exportImage()' class='header-button'>Export Image</button>
         </div>
     </div>
     <div id='canvas-wrapper'>
